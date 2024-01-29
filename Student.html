@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <style>
+        #errorMsg,#errorMsg2{
+        color: rgb(251, 63, 63);
+        margin-top: 5px;
+        display: none;
+        }
+        input{
+        border: 1px solid rgb(181, 179, 179);
+        padding: 5px;
+        margin: 30px;
+        border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" placeholder="Enter Student Name" id="studentName">
+    <p id="errorMsg">Name length must be > 3</p>
+
+    <br>
+    <input type="text" name=""placeholder="Enter Student Age" id="studentAge">
+    <p id="errorMsg2">Age must be >18 year</p>
+    <br>
+    <button onclick="add()">Add Student</button>
+    <p id="test"></p>
+    <table id="tabel"  border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Acthion</th>
+        </tr>
+        
+    </table>
+    <script src="studAdd.js"></script>
+</body>
+</html>
